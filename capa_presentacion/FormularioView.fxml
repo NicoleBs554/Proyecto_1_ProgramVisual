@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="8" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="presentacion.FormularioController" alignment="TOP_LEFT" padding="10">
+    <ScrollPane fitToWidth="true">
+        <VBox fx:id="fieldsContainer" spacing="6" padding="6" />
+    </ScrollPane>
+    <HBox spacing="8" alignment="CENTER_RIGHT">
+        <Button text="Cancelar" onAction="#handleCancel" />
+        <Button text="Aceptar" onAction="#handleAccept" />
+    </HBox>
+</VBox>

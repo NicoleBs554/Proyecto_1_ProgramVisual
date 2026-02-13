@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="presentacion.MainController">
+    <top>
+        <ToolBar>
+            <Button text="Nuevo" />
+            <Button text="Editar" />
+            <Button text="Eliminar" />
+            <Button text="⟳" onAction="#handleRefresh" />
+        </ToolBar>
+    </top>
+    <center>
+        <TableView fx:id="tableView" />
+    </center>
+    <bottom>
+        <HBox spacing="8" padding="8">
+            <Label fx:id="lblStatus" text="Estado" />
+        </HBox>
+    </bottom>
+</BorderPane>

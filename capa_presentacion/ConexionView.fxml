@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="presentacion.ConexionController" spacing="8" padding="12">
+    <Label text="CONEXIÓN A BASE DE DATOS" style="-fx-font-size:16px; -fx-font-weight:bold;" />
+    <GridPane hgap="8" vgap="8">
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" minWidth="100" />
+            <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        <Label text="Host:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="txtHost" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+        <Label text="Puerto:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="txtPort" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+        <Label text="Base:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="txtDatabase" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <Label text="Usuario:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <TextField fx:id="txtUsername" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+        <Label text="Contraseña:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+        <PasswordField fx:id="txtPassword" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+        <Label text="Tabla:" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+        <ChoiceBox fx:id="cbTables" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+    </GridPane>
+
+    <HBox spacing="8" alignment="CENTER_RIGHT">
+        <Button fx:id="btnTest" text="Probar Conexión" onAction="#handleTest" />
+        <Button fx:id="btnConnect" text="Conectar" onAction="#handleConnect" />
+    </HBox>
+</VBox>
