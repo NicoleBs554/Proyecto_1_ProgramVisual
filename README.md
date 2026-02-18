@@ -1,1 +1,3 @@
 # Proyecto_1_ProgramVisual
+
+##Este proyecto consiste en el desarrollo de una interfaz gráfica (GUI) funcional y dinámica en Java/JavaFX que actúe como un administrador universal de datos. A diferencia de un sistema estático, este CRUD (Crear, Leer, Actualizar, Borrar) debe ser agnóstico a la estructura de la base de datos, permitiendo al usuario configurar la conexión manualmente para gestionar cualquier tabla existente.

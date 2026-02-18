@@ -5,10 +5,16 @@
             fx:controller="presentacion.MainController">
     <top>
         <ToolBar>
-            <Button text="Nuevo" />
-            <Button text="Editar" />
-            <Button text="Eliminar" />
+            <Button text="Nuevo" onAction="#handleNuevo" />
+            <Button text="Editar" onAction="#handleEditar" />
+            <Button text="Eliminar" onAction="#handleEliminar" />
+            <Button text="Leer por PK" onAction="#handleReadByPk" />   <!-- NUEVO BOTÓN -->
+            <Separator orientation="VERTICAL" />
             <Button text="⟳" onAction="#handleRefresh" />
+            <Separator orientation="VERTICAL" />
+            <Label text="Buscar:" />
+            <TextField fx:id="txtBuscar" promptText="Valor a buscar" />
+            <Button text="Buscar" onAction="#handleBuscar" />   <!-- CORREGIDO: antes era handleBuscarCampo -->
         </ToolBar>
     </top>
     <center>
