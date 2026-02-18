@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="presentacion.ConexionController" 
+      spacing="15" alignment="CENTER" style="-fx-padding: 30; -fx-background-color: #f5f5f5;">
+
+    <Label text="Conexión a Base de Datos PostgreSQL" 
+           style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+
+    <GridPane hgap="10" vgap="10" alignment="CENTER">
+        <Label text="Host:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="txtHost" GridPane.columnIndex="1" GridPane.rowIndex="0" 
+                   prefWidth="250"/>
+
+        <Label text="Puerto:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="txtPort" GridPane.columnIndex="1" GridPane.rowIndex="1" 
+                   prefWidth="250"/>
+
+        <Label text="Base de Datos:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="txtDatabase" GridPane.columnIndex="1" GridPane.rowIndex="2" 
+                   prefWidth="250"/>
+
+        <Label text="Usuario:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="txtUsername" GridPane.columnIndex="1" GridPane.rowIndex="3" 
+                   prefWidth="250"/>
+
+        <Label text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <PasswordField fx:id="txtPassword" GridPane.columnIndex="1" GridPane.rowIndex="4" 
+                       prefWidth="250"/>
+    </GridPane>
+
+    <Label text="Seleccionar Tabla:"/>
+    <ChoiceBox fx:id="cbTables" prefWidth="300"/>
+
+    <HBox spacing="15" alignment="CENTER">
+        <Button fx:id="btnTest" text="Probar Conexión" onAction="#handleTest" 
+                style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-padding: 10 20;"/>
+        <Button fx:id="btnConnect" text="Conectar" onAction="#handleConnect" 
+                style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-padding: 10 20;"/>
+    </HBox>
+
+</VBox>
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="presentacion.ConexionController" spacing="8" padding="12">
+    <Label text="CONEXIÓN A BASE DE DATOS" style="-fx-font-size:16px; -fx-font-weight:bold;" />
+    <GridPane hgap="8" vgap="8">
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" minWidth="100" />
+            <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        <Label text="Host:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="txtHost" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+        <Label text="Puerto:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="txtPort" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+        <Label text="Base:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="txtDatabase" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <Label text="Usuario:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <TextField fx:id="txtUsername" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+        <Label text="Contraseña:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+        <PasswordField fx:id="txtPassword" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+        <Label text="Tabla:" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+        <ChoiceBox fx:id="cbTables" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+    </GridPane>
+
+    <HBox spacing="8" alignment="CENTER_RIGHT">
+        <Button fx:id="btnTest" text="Probar Conexión" onAction="#handleTest" />
+        <Button fx:id="btnConnect" text="Conectar" onAction="#handleConnect" />
+    </HBox>
+    <stylesheets>
+        <String value="style.css" />
+    </stylesheets>
+</VBox>
