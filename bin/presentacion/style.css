@@ -1,0 +1,107 @@
+/* style.css - Versión con imagen de fondo */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-image: url("lib/P3.PGN");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+/* Fondo semitransparente para los contenedores principales */
+.vbox, .grid-pane, .border-pane, .tool-bar, .scroll-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+}
+
+/* Estilos para botones */
+.button {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-background-color: #1f7aec;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.3, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #1558b0;
+}
+
+.button:default {
+    -fx-background-color: #1f7aec;
+}
+
+/* Toolbar con fondo semitransparente */
+.tool-bar {
+    -fx-background-color: rgba(230, 240, 255, 0.9);
+    -fx-padding: 8;
+    -fx-spacing: 8;
+    -fx-border-color: #d6dbe6;
+    -fx-border-radius: 8;
+}
+
+/* Tabla con fondo blanco semitransparente */
+.table-view {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-border-color: #d6dbe6;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 4;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f5f7fa;
+    -fx-border-color: #d6dbe6;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Campos de texto */
+.text-field, .password-field {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d6dbe6;
+    -fx-padding: 6 10;
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #1f7aec;
+    -fx-effect: dropshadow(gaussian, rgba(31,122,236,0.4), 6, 0.3, 0, 0);
+}
+
+/* Etiquetas */
+.label {
+    -fx-text-fill: #1c2b4a;
+    -fx-font-weight: 500;
+}
+
+/* ChoiceBox */
+.choice-box {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d6dbe6;
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Alertas (diálogos modales) conservan fondo blanco sólido */
+.alert {
+    -fx-background-color: #ffffff;
+}
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: #d6dbe6;
+    -fx-border-radius: 8;
+    -fx-background: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}

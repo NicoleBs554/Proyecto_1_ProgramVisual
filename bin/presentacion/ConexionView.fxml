@@ -33,4 +33,7 @@
         <Button fx:id="btnTest" text="Probar Conexión" onAction="#handleTest" />
         <Button fx:id="btnConnect" text="Conectar" onAction="#handleConnect" />
     </HBox>
+    <stylesheets>
+        <String value="style.css" />
+    </stylesheets>
 </VBox>

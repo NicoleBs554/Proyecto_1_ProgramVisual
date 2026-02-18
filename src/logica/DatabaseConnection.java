@@ -104,7 +104,7 @@ public class DatabaseConnection {
         return tableData;
     }
 
-    public String getColumnType(String tableName, String columnName) throws SQLException {
+    public String getColumnType(String tableName, String columnName) {
         TableData td = loadTableStructure(tableName);
         for (ColumnInfo col : td.getColumns()) {
             if (col.getName().equals(columnName)) return col.getType();
@@ -123,13 +123,13 @@ public class DatabaseConnection {
             } else if (upper.contains("UUID")) {
                 return UUID.fromString(value);
             } else if (upper.contains("DATE")) {
-                return java.sql.Date.valueOf(value); // yyyy-MM-dd
+                return java.sql.Date.valueOf(value);
             } else if (upper.contains("TIMESTAMP")) {
-                return java.sql.Timestamp.valueOf(value); // yyyy-MM-dd HH:mm:ss
+                return java.sql.Timestamp.valueOf(value);
             } else if (upper.contains("DECIMAL") || upper.contains("NUMERIC") || upper.contains("DOUBLE") || upper.contains("FLOAT")) {
                 return new java.math.BigDecimal(value);
             } else {
-                return value; // texto
+                return value;
             }
         } catch (Exception e) {
             throw new IllegalArgumentException("Valor inválido para tipo " + sqlTypeName + ": " + value, e);
@@ -156,7 +156,6 @@ public class DatabaseConnection {
         return tableData;
     }
 
-    // NUEVO MÉTODO: Cargar una fila por su clave primaria
     public TableData loadRowByPk(String tableName, String pkColumn, Object pkValue) {
         TableData tableData = loadTableStructure(tableName);
         if (!isConnected()) return tableData;

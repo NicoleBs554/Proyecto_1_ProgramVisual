@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Proyecto1_CRUDG.iml" filepath="$PROJECT_DIR$/Proyecto1_CRUDG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.base/javafx.base.iml" filepath="$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.base/javafx.base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.controls/javafx.controls.iml" filepath="$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.controls/javafx.controls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.fxml/javafx.fxml.iml" filepath="$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.fxml/javafx.fxml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.graphics/javafx.graphics.iml" filepath="$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.graphics/javafx.graphics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.media/javafx.media.iml" filepath="$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.media/javafx.media.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.swing/javafx.swing.iml" filepath="$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.swing/javafx.swing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.web/javafx.web.iml" filepath="$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/javafx.web/javafx.web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/jdk.jsobject/jdk.jsobject.iml" filepath="$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/jdk.jsobject/jdk.jsobject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/jfx.incubator.input/jfx.incubator.input.iml" filepath="$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/jfx.incubator.input/jfx.incubator.input.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/jfx.incubator.richtext/jfx.incubator.richtext.iml" filepath="$PROJECT_DIR$/lib/javafx-sdk-25.0.2/src/jfx.incubator.richtext/jfx.incubator.richtext.iml" />
+    </modules>
+  </component>
+</project>
